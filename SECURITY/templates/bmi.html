@@ -1,0 +1,156 @@
+<html>
+     <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            
+            .bg {
+                     
+                    background: url(https://www.heartfoundation.org.nz/images/nutrition/page-heros/bmi.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-attachment: fixed;
+                    align-items: center;
+                }
+                .dropbtn {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 16px;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                }
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+
+ 
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:grey;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+* {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+ 
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+ 
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .logo img {
+            width: 80px;
+            border-radius: 50px;
+        }
+ 
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .nav-list li a:hover {
+            color: grey;
+        }
+           
+        </style>
+    </head>
+    
+    <body class="bg" align="center">
+        <nav class="navbar background" style="padding: 20px;">
+            <ul class="nav-list">
+                <div class="logo">
+                    <img src= "https://play-lh.googleusercontent.com/4oDSXUQmbO6D7Y7a1qXYc8fkXest3HGy7wzkTHV_ePxZpscCh4NsF29eciniJkjctYI=w300">
+                </div>
+                <li><a>WORKOUT TRACKER</a></li>
+                
+            </ul>
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn">☰</button>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5000/hom" style="color: white;">Home</a>
+                    <a href="http://127.0.0.1:5000/home" style="color: white;">Workouts</a>
+                    <a href="http://127.0.0.1:5000/form" style="color: white;">Schedule</a>  
+                    <a href="http://127.0.0.1:5000/table" style="color: white;">History</a>
+                    <a href="http://127.0.0.1:5000/graph" style="color: white;">Graph</a>
+                    <a href="http://127.0.0.1:5000/benefits" style="color: white;">Benefits</a>
+                    <a href="http://127.0.0.1:5000/bmi" style="color: white;">BMI</a>
+                    <a href="http://127.0.0.1:5000/" style="color: white;">Logout</a>
+                   
+                </div>
+              </div>
+          </nav>
+         <center>
+            <h3>BMI Calculator</h3><br>
+            <form action="/bmi1" method="post">
+                <div class="container"> 
+                   <input type="number" placeholder="Weight In KG's" name="w"><br><br> 
+                   <input type="number" placeholder="Height In CM's" name="h">
+                
+                </div><br>
+                <div class="container">
+                    <center>
+                        <button type="submit">Calculate</button>
+                    </center>
+                </div><br>
+                <div class="container">
+                    <center>
+                        {{result}} <br><br>
+                        {{res}}
+                    </center>
+                </div>
+            </form>
+         </center>
+    </body>
+</html>

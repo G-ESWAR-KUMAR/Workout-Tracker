@@ -1,0 +1,166 @@
+<html>
+     <head>
+        
+        <style>
+            .bg {
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: 100% 100%;
+                     
+                    background-color: grey;
+                }
+
+                .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color:black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: grey;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+* {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+ 
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+ 
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .logo img {
+            width: 80px;
+            border-radius: 50px;
+        }
+ 
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .nav-list li a:hover {
+            color: grey;
+        }
+
+             
+             
+             
+        </style>
+    </head>
+    <body>
+      <nav class="navbar background" style="padding: 20px;">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src= "https://play-lh.googleusercontent.com/4oDSXUQmbO6D7Y7a1qXYc8fkXest3HGy7wzkTHV_ePxZpscCh4NsF29eciniJkjctYI=w300">
+            </div>
+            <li><a>WORKOUT TRACKER</a></li>
+             
+        </ul>
+        <div class="dropdown" style="float:right;">
+          <button class="dropbtn">☰</button>
+          <div class="dropdown-content">
+            <a href="http://127.0.0.1:5000/hom" style="color: white;">Home</a>
+            <a href="http://127.0.0.1:5000/home" style="color: white;">Workouts</a>
+            <a href="http://127.0.0.1:5000/form" style="color: white;">Schedule</a>  
+            <a href="http://127.0.0.1:5000/table" style="color: white;">History</a>
+            <a href="http://127.0.0.1:5000/graph" style="color: white;">Graph</a>
+            <a href="http://127.0.0.1:5000/benefits" style="color: white;">Benefits</a>
+            <a href="http://127.0.0.1:5000/bmi" style="color: white;">BMI</a>
+            <a href="http://127.0.0.1:5000/" style="color: white;">Logout</a>
+             
+          </div>
+        </div>
+      </nav><br>
+         
+        <div class="row">
+
+            <div class="column">
+                <div class="card">
+                      <center>
+                         <form action="/table" method="get">
+                            <table width="80%">
+                                <tr>
+                                    <th>Name Of The Workout</th>
+                                    <th>Workout Duration</th> 
+                                    <th>Date</th>       
+                                     
+                                </tr>
+                                {% for i in data%}
+                                <tr>
+                                    <td>{{i[1]}}</td>
+                                    <td>{{i[2]}}</td>
+                                    <td>{{i[0]}}</td>
+                                     
+                                </tr>
+                                {% endfor %}
+                            </table><br>
+                             
+                         </form><br>
+                          
+                      </center>
+                </div>
+            </div>
+        </div> 
+         
+           
+    </body>
+</html>

@@ -1,0 +1,250 @@
+<html>
+ 
+<head>
+    <title>Simple web Development Template</title>
+ 
+    <style>
+        .main {
+            background-image: url(https://previews.123rf.com/images/arrow/arrow1607/arrow160700024/61706315-medical-healthcare-fitness-background.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+ 
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+ 
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .logo img {
+            width: 80px;
+            border-radius: 50px;
+        }
+ 
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .nav-list li a:hover {
+            color: rgb(72, 0, 255);
+        }
+        .card {
+                background-color:white;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 100%;
+            }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(255,255,255);
+            }
+ 
+
+            .container {
+              padding: 2px 16px;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            
+            .column {
+              float: left;
+              width: 50%;
+              padding: 30px;
+            }
+       
+ 
+      </style>
+     
+</head>
+<body class="main">
+  
+  <nav class="navbar background">
+    <ul class="nav-list">
+        <div class="logo">
+            <img src= "https://play-lh.googleusercontent.com/4oDSXUQmbO6D7Y7a1qXYc8fkXest3HGy7wzkTHV_ePxZpscCh4NsF29eciniJkjctYI=w300">
+        </div>
+        <li><a href="http://127.0.0.1:5000/">WORKOUT TRACKER</a></li>
+        <li style="float: right;"><a href="http://127.0.0.1:5000/news">News And Events</a></li>
+        <li><a href="http://127.0.0.1:5000/about">About</a></li>
+    </ul>
+  </nav><br>
+    <div class="container">
+         <b><h2>News And Events</h2></b>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img width="100%" src="https://images.indianexpress.com/2022/09/billie-eilish-1200.jpg?resize=600,334">
+                <div class="container">
+                   <a href="https://indianexpress.com/article/lifestyle/fitness/billie-eilish-gym-rat-fitness-journey-working-out-8182096/"> <b><h3> ‘I’m a gym rat now’: Singer Billie Eilish on how working out makes her ‘feel so much better’</h3></b></a><br>
+                   Detailing her fitness journey, the singer mentioned how working out has regularly changed her life. “Especially [after] coming back from Europe I started working out at a gym for the first time every day. And I know that’s a pretty — like a lot of people do that.”
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="card">
+                <img width="100%" src="https://images.indianexpress.com/2022/10/ranbir-kapoor_200_kunal-gir_.jpg">
+                <div class="container">
+                   <a href="https://indianexpress.com/article/lifestyle/fitness/ranbir-kapoor-six-pack-abs-unseen-pictures-benefits-8200635/"> <b><h3>  If you want six-pack abs like Ranbir Kapoor, here’s your go-to guide</h3></b></a><br>
+                   Originally shared by his trainer Kunal Gir, the shirtless pictures of the actor were re-shared by Neetu Kapoor. As expected, Ranbir’s chiselled physique replete with his six-pack abs, had all fitness enthusiasts taking notes. “This one is for all the Ranbir Kapoor fans. These are unseen pics taken during a look test in Bulgaria,” Gir had captioned the pictures.
+
+                   If you, too, are looking to build six-pack abs, we’ve got you covered.
+                    
+                </div>
+            </div>
+        </div>
+         
+        <div class="column">
+            <div class="card">
+                <img width="100%" src="https://images.indianexpress.com/2022/08/tiger-shroff_1200_insta.jpg?resize=600,334">
+                <div class="container">
+                   <a href="https://indianexpress.com/article/lifestyle/fitness/tiger-shroff-lifts-220-kgs-again-fitness-weights-benefits-8075978/"> <b><h3>Tiger Shroff proves why he is a '220 kg club member' </h3></b></a><br>
+                   Tiger Shroff’s commitment to fitness is not new. But what amazes us every time is how he keeps challenging himself by experimenting with newer fitness moves on the regular. And this time, too, he set major fitness goals by lifting 220 kgs! Unfortunately, he could not hold on to it for the duration he had in mind.
+
+                   “Hi again 220 kgs…could have played a little longer with you if my wrist straps didn’t rip off,” wrote Tiger on Instagram.
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img width="100%" src="https://images.indianexpress.com/2022/09/Arjun-Kapoor-weight-loss-1200.jpg?resize=600,334">
+                <div class="container">
+                   <a href="https://indianexpress.com/article/lifestyle/fitness/arjun-kapoor-diet-weight-loss-fitness-transformation-bollywood-actors-vicky-kaushal-kiara-advani-shahid-kapoor-akshay-arora-interview-8168096/"> <b><h3> Took Arjun Kapoor 14 months to lose weight, says Akshay Arora who helped the actor ‘taper down meals by 50 per cent’</h3></b></a><br>
+                   Many of us are curious about what our favourite celebrities eat, how they manage to look healthy and in shape and what their meal charts comprise. Actors, particularly, have to undergo the crests and troughs of weight loss based on the kind of project they have signed and what they want to look like for the part they are playing — there may be some gains and losses in terms of body weight, and some of it may be drastic.
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img width="100%" src="https://www.billboard.com/wp-content/uploads/2022/10/taylor-swift-toronto-2022-b-billboard-1548.jpg?w=942&h=623&crop=1">
+                <div class="container">
+                   <a href="https://www.billboard.com/music/music-news/taylor-swift-music-apple-fitness-swiftie-workout-programs-1235155708/"> <b><h3>Taylor Swift’s Music to Be Featured in Apple Fitness Workout Programs: ‘Get Ready to Sweat, Swifties’</h3></b></a><br>
+                   There’s never been a better time for a Swifties to start their fitness journeys. In a Thursday (Oct. 13) Instagram post, Apple Fitness+ announced that its newest set of exercise programs will be designed around the music of Taylor Swift, featuring songs specially curated for yoga, treadmill and HIIT workouts.
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img width="100%" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F239798079%2F437955318594%2F1%2Foriginal.20220302-191517?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=5%2C0%2C1490%2C745&s=09aebd20f534f29d94367840f203f26b">
+                <div class="container">
+                   <a href="https://www.eventbrite.com/e/live-home-workout-tickets-151265795065?aff=ebdssbonlinesearch"> <b><h3>
+                    Live Home Workout
+                    Live Home Workout
+                    Thu, Oct 20, 2022 12:30 AM IST + more events
+                    Free
+                    Online Meditation Events</h3></b></a><br>
+                    Wondering how to get in shape at home? Introducing live, no-equipment home workouts every week with easy, effortless exercises for beginners, experts, all ages, and body types.
+                    <br> <br>
+                    Imagine this–your workout begins with a unique releasing exercise routine of stretches and exercises designed to stimulate your organs and encourage the flow of chi in your body. This will cancel out muscle tension, defeat joint pain, and strengthen circulation. Next, cut loose with the Best Health Dance, a simple group dance with easy-to-follow steps for an instant boost of positive energy.
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img width="100%" src="https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F472258364%2F676x380.webp&w=1920&q=75">
+                <div class="container">
+                   <a href="https://www.meetup.com/pune-300-group-fitness-meetup/events/bkxsrsydcnbbc/"> <b><h3> Only For Ladies - Experience Yoga With Body Weight.</h3></b></a><br>
+                   Please come for first one free demo class. <br> Please bring yoga mat. <br> We have started a special batches for Yoginis. <br> (Ladies batch) at Bhavika Dance studio Sesame Street preschool <br> Shop no 16-21 Chourange Sanskruti Near amar cottage Bhosalenagar Hadapsar. <br> 5.30 to 6.30 pm Tue- Thu - Sat. <br> Please call for more details. 9028743963.
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img width="100%" src="https://www.yogapoint.com/images-new/img-chakra-course.jpg">
+                <div class="container">
+                   <a href="https://10times.com/abhayaranya-rishikesh-yogpeeth-rishikesh"> <b><h3> 300 Hour Yoga Teacher Training in Rishikesh, India
+                    (14 Nov - 04 Dec 2022)</h3></b></a><br>
+                    Yoga is a physical, mental and spiritual practice that originated in India. As one of the oldest forms of exercise known to humankind, yoga has been practiced for more than 5,000 years. It is now popular worldwide and considered an essential part of any healthy lifestyle. A comprehensive 300 hour teacher training program provides you with all the tools necessary to teach this ancient discipline effectively and passionately to students from all walks of life.
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img width="100%" src="https://ts-production.imgix.net/images/ff75e157-96fe-4b17-8ff5-b209ca774f9e.jpg?auto=compress,format&w=800&h=450">
+                <div class="container">
+                   <a href="https://www.townscript.com/e/green-10km-challenge-get-indias-biggest-medal-240114"> <b><h3> Green Virtual Marathon - Get India's Biggest Medal</h3></b></a><br>
+                   
+                   Run / Walk / Jog / Cycle at your own Place, Gym, Treadmill or any other Marathon Event.
+                   Distance to be covered 10 km in one day or you can do in parts like 1 km for 10 days or 2 km for 5 days or 5 km for 2 days or any random distance as per your convenience.
+                   Run is to promote Fitness and Greenery
+                   <br>
+                   A virtual Marathon / Cyclothon is a challenge you give yourself to reach a designated goal of finishing a specified distance by running or walking or cycling at a time and location of your choice. ... The big difference is that you can run this race anywhere, with anyone, and any time of the day.
+                   <br><br>
+                   Share screenshot of your Timing App - Whatsapp on 8097712656. You can use any Timing app like Strava, Runkeeper, Nike, Endomondo, Mobile apps, Health apps etc.
+                   Get Medal by Courier.
+                   
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img width="100%" src="https://ts-production.imgix.net/images/5c91ffb5-fda0-4ea3-8c8d-84c6a0213678.jpg?auto=compress,format&w=800&h=450">
+                <div class="container">
+                   <a href="https://www.townscript.com/e/freedom-marathon"> <b><h3> Freedom Virtual Marathon - Get Medal by Courier</h3></b></a><br>
+                   Run is to promote Fitness.
+A virtual Marathon is a challenge you give yourself to reach a designated goal of finishing a specified distance by running or walking or cycling at a time and location of your choice. ... The big difference is that you can run this race anywhere, with anyone, and any time of the day.
+<br><br>
+Share screenshot of your Timing App - Whatsapp on 8097712656. You can use any Timing app like Strava, Runkeeper, Nike, Endomondo, Mobile apps, Health apps etc.
+Get Medal by Courier.
+For Details whatsapp on 8097712656
+                    
+                </div>
+            </div>
+        </div>
+       
+
+    </div>
+    
+    
+
+   
+</body>
+</html>

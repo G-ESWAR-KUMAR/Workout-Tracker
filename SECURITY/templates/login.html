@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            
+            
+            .bg{
+                background-image: url(https://media.istockphoto.com/photos/gym-background-with-equipment-picture-id953047628?k=20&m=953047628&s=612x612&w=0&h=YG4KnopbdVNeUynm7v1rr_KDRcIB9MclWoAghWlntq0=);
+                background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            align-items: center;
+            }
+        
+            * {
+                margin: 0;
+                padding: 0;
+            }
+     
+            .navbar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: sticky;
+                top: 0;
+                cursor: pointer;
+            }
+     
+            .background {
+                background: black;
+                background-blend-mode: darken;
+                background-size: cover;
+            }
+     
+            .nav-list {
+                width: 70%;
+                display: flex;
+                align-items: center;
+            }
+     
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+     
+            .logo img {
+                width: 80px;
+                border-radius: 50px;
+            }
+     
+            .nav-list li {
+                list-style: none;
+                padding: 26px 30px;
+            }
+     
+            .nav-list li a {
+                text-decoration: none;
+                color: white;
+            }
+     
+            .nav-list li a:hover {
+                color: grey;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgb(7, 7, 7);
+                transition: 0.3s;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
+            }
+ 
+
+            .container {
+              padding:20px;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            
+            .column {
+              width: 35%;
+              padding:30px;
+            }
+           
+            
+        </style>
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <body class="bg">
+        <nav class="navbar background">
+            <ul class="nav-list">
+                <div class="logo">
+                    <img src= "https://play-lh.googleusercontent.com/4oDSXUQmbO6D7Y7a1qXYc8fkXest3HGy7wzkTHV_ePxZpscCh4NsF29eciniJkjctYI=w300">
+                </div>
+                <li><a href="http://127.0.0.1:5000/">WORKOUT TRACKER</a></li>
+                <li style="float: right;"><a href="http://127.0.0.1:5000/news">News And Events</a></li>
+                <li><a href="http://127.0.0.1:5000/about" style="color: white;">About</a></li>
+            </ul>
+          </nav>
+         <br><br>
+        <center>
+        
+             <div class="content">
+                
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            
+                                <h2 style="color: rgb(255, 255, 255);">Login Here</h2><br><br>
+                        
+                        
+                                <form action="/verify" method="post">
+                                    <input type="text" placeholder="Email Address" width="200px" name="Email">
+                                    <br><br>
+                                    
+                                  <input type="password" placeholder="Password" width="200px" name="Password">
+                                
+                                    <br><br>
+                                
+                                    <input type="submit" value="Login"><br><br> <p style="color:white;">{{result}}</p>
+                                         
+                                </form>
+                        
+             </div>
+
+                        </div>
+                    </div>
+                </div>
+            </center>
+    </body>
+</html>

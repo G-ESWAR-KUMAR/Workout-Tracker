@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <style>
+        .main {
+            background-image: url(https://thumbs.dreamstime.com/b/flat-lay-crossfit-gym-equipment-copy-space-sport-fitness-workout-concept-background-top-view-142544029.jpg); 
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            align-items: center;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+ 
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+ 
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .logo img {
+            width: 80px;
+            border-radius: 50px;
+        }
+ 
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .nav-list li a:hover {
+            color: blueviolet;
+        }
+        .card {
+                background-color: rgb(255, 255, 255);
+                border-radius: 10px;
+                box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+                transition: 0.3s;
+                width: 100%;
+            }
+            .card-header{
+        
+                padding: 10px;
+                border-radius: 10px;
+                padding-top: 15px;
+            }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
+                align-items: center;
+            }
+ 
+
+            .container {
+              padding:20px;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            
+            .column {
+              width: 35%;
+              padding:30px;
+            }
+    </style>
+</head>
+<body align="center" class="main">
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src= "https://play-lh.googleusercontent.com/4oDSXUQmbO6D7Y7a1qXYc8fkXest3HGy7wzkTHV_ePxZpscCh4NsF29eciniJkjctYI=w300">
+            </div>
+            <li><a href="http://127.0.0.1:5000/">WORKOUT TRACKER</a></li>
+            <li style="float: right;"><a href="http://127.0.0.1:5000/news">News And Events</a></li>
+            <li><a href="http://127.0.0.1:5000/about" style="color: white;">About</a></li>
+        </ul>
+    </nav>
+    <center>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 style="color: rgb(255, 0, 0);">Registration Form</h3>
+                    </div>
+                     <div class="card-body">
+                        <form action="/details" method="post">
+                            <div class="container">
+                              <center>
+                                   
+                                        <input type ="text" placeholder="Name*" name="Name" ><br><br>
+                                          
+                                        <input type ="text" placeholder="Email*" name="RollNo"><br><br>
+                                      
+                                        <input type ="text" placeholder="Create a Password*" name="Password"><br><br>
+                                       
+                                        <input type ="number" placeholder="Phoneno*" name="Phoneno"><br><br>
+                                          
+                                        <input type ="text" placeholder="Enter City*" name="Department">
+                                     
+                              </center><br>
+                              <p style="color: rgb(255, 0, 0);"> <input type="checkbox"> <b>Accept our Terms & Privacy</b></p> <br>
+                              <button type="submit" class="registerbtn">Register</button><br> <br><p style="color:rgb(0, 0, 0);">{{result}}</p>
+                              
+                            </div>
+                            <div class="container">
+                              <p style="color: rgb(255, 0, 0);"> <b>Already have an account? </b> <b><a style="color:rgb(8, 50, 94);" href="http://127.0.0.1:5000/login">Sign in</a></b></p>
+                            </div>
+                          </form>
+
+                     </div>
+                </div>
+    
+            </div>
+        </div>
+    </center>
+ 
+
+</body>
+</html>

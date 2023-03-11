@@ -1,0 +1,148 @@
+<html>
+ 
+<head>
+    
+ 
+    <style>
+        .main {
+        
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+ 
+        .background {
+            background: rgb(0, 0, 0);
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+ 
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .logo img {
+            width: 80px;
+            border-radius: 50px;
+        }
+ 
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .nav-list li a:hover {
+            color: blueviolet;
+        }
+        .card {
+                background-color:white;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 100%;
+            }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(255,255,255);
+            }
+ 
+
+            .container {
+              padding:20px;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            
+            .column {
+              float: left;
+              width: 33%;
+              padding:30px;
+            }
+
+            .content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  height: 85%;
+  padding: 20px;
+}
+
+#myVideo{
+
+  width: 100%;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+ 
+ 
+      </style>
+</head>
+<body class="main" align="center">
+  
+  <nav class="navbar background">
+    <ul class="nav-list">
+        <div class="logo">
+            <img src= "https://play-lh.googleusercontent.com/4oDSXUQmbO6D7Y7a1qXYc8fkXest3HGy7wzkTHV_ePxZpscCh4NsF29eciniJkjctYI=w300">
+        </div>
+        <li><a href="http://127.0.0.1:5000/">WORKOUT TRACKER</a></li>
+        <li><a href="http://127.0.0.1:5000/news">News And Events</a></li>
+        <li><a href="http://127.0.0.1:5000/about">About</a></li>
+    </ul>
+  </nav>
+  <video autoplay muted loop id="myVideo" width="100%">
+    <source src="https://player.vimeo.com/external/456092365.sd.mp4?s=80e8f28b7c2a93da5a48888cec03ce06f772e25b&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="content">
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <form action="/register">
+        <button id="myBtn">Get Started</button>
+     </form>
+  </div>
+    
+</body>
+</html>
